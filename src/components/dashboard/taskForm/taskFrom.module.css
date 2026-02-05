@@ -1,0 +1,145 @@
+.task_form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 98vh;
+  overflow-y: scroll; 
+  padding-right: 10px;
+  padding: 20px;
+
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.task_form form::-webkit-scrollbar {
+  width: 0;
+  display: none;
+}
+
+.task_form form input,
+.task_form form textarea,
+.task_form form select {
+  width: 80%;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(27, 30, 41);
+  color: rgb(91, 101, 120);
+  margin-top: 5px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.submit_button > button {
+  width: 50%;
+  background-color: rgb(220, 247, 99);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.task_form form textarea {
+  height: 100px;
+}
+
+.task_form label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.task_form > form aside:nth-child(6) input {
+  width: 20px;
+}
+
+.task_form > form aside:nth-child(7) {
+  text-align: center;
+}
+
+
+.drop_zone {
+  border: 2px dashed #555;
+  padding: 30px;
+  height: 150px;
+  text-align: center;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #2f2f2f;
+  color: #ccc;
+  transition: 0.3s;
+  display: grid;
+  place-items: center;
+}
+
+.drop_zone:hover {
+  border-color: #888;
+}
+
+.file_list {
+  margin-top: 12px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.file_chip {
+  background: #3a3a3a;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.file_chip > button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+
+.file_chip > button:hover {
+  color: #fff;
+}
+
+.submit_button {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.skill_button {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  color: black;
+  font-size: 20px;
+}
+
+.task_form form .skill_list {
+  font-size: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+
+.error {
+  color: #e53935;
+  font-size: 13px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.inputError {
+  border: 1px solid #e53935 !important;
+}

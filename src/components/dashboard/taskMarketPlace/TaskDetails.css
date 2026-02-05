@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+html,
+body,
+#root,
+.task-root {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a2332, #05070c);
+  color: #fff;
+}
+
+.task-root {
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.receiver {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 20px;
+}
+
+.receiver p {
+  font-size: 12px;
+  color: #9aa4b2;
+}
+
+.sidebar nav a {
+  display: block;
+  padding: 10px;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  color: #cfd8dc;
+}
+
+.sidebar nav .active {
+  background: #d6ff3d;
+  color: #000;
+}
+
+/* MAIN */
+.content {
+  flex: 1;
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+}
+
+/* DETAILS CARD */
+.details-card {
+  flex: 1;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(25px);
+}
+
+.back {
+  color: #9aa4b2;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.price {
+  color: #d6ff3d;
+}
+
+.skills {
+  display: flex;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.skills span {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+section {
+  margin-top: 18px;
+}
+
+section h4 {
+  margin-bottom: 8px;
+}
+
+section p,
+section li {
+  font-size: 14px;
+  color: #cfd8dc;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+.footer-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.ghost {
+  background: transparent;
+  border: none;
+  color: #cfd8dc;
+  cursor: pointer;
+}
+
+.primary {
+  background: #d6ff3d;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.info-card {
+  padding: 20px;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px);
+}
+
+.info-card p {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.mt {
+  margin-top: 10px;
+}
+
+.note p {
+  color: #d6ff3d;
+}
+
+textarea {
+  width: 100%;
+  min-height: 80px;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: #fff;
+  margin-top: 10px;
+}

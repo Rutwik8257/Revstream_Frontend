@@ -1,0 +1,299 @@
+.tos-page {
+  padding: 20px 30px;
+  min-height: 100%;
+  color: white;
+}
+
+.tos-header {
+  margin-bottom: 10px;
+}
+
+.tos-title {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.tos-head-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.tos-back-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.06);
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.tos-back-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+
+.tos-subtitle {
+  /* margin-top: 6px; */
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 720px;
+  line-height: 1.5;
+}
+
+.tos-scroll {
+  height: calc(100vh - 120px);
+  overflow-y: auto ;
+  padding-right: 8px;
+}
+
+.tos-scroll::-webkit-scrollbar {
+  width: 0px;
+}
+.tos-scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+}
+.tos-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Intro Box */
+.tos-intro {
+  border: 1px dashed rgba(95, 190, 255, 0.45);
+  background: rgba(255, 255, 255, 0.04);
+  padding: 14px 16px;
+  border-radius: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+
+/* Main Cards */
+.tos-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 18px;
+  margin-bottom: 18px;
+}
+
+.tos-card-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.tos-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tos-icon.blue {
+  box-shadow: 0 0 0 1px rgba(90, 180, 255, 0.25);
+}
+.tos-icon.green {
+  box-shadow: 0 0 0 1px rgba(61, 255, 107, 0.18);
+}
+.tos-icon.violet {
+  box-shadow: 0 0 0 1px rgba(180, 120, 255, 0.2);
+}
+.tos-icon.yellow {
+  box-shadow: 0 0 0 1px rgba(255, 212, 91, 0.25);
+}
+.tos-icon.red {
+  box-shadow: 0 0 0 1px rgba(255, 60, 60, 0.25);
+}
+
+.tos-card h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tos-text {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.tos-subhead {
+  /* margin-top: 14px; */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tos-subhead.green {
+  color: #c8ff3d;
+}
+.tos-subhead.red {
+  color: #ff3b3b;
+}
+.tos-subhead.yellow {
+  color: #ffd45b;
+}
+
+.tos-list {
+  /* margin-top: 8px; */
+  margin-left: 18px;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.tos-list.green li {
+  color: rgba(200, 255, 61, 0.9);
+}
+
+.tos-list.red li {
+  color: rgba(255, 90, 90, 0.9);
+}
+
+/* Responsibilities Pills */
+.tos-pill {
+  margin-top: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-left: 4px solid #3dff6b;
+}
+
+.tos-pill h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.tos-pill p {
+  /* margin-top: 6px; */
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.72);
+  line-height: 1.5;
+}
+
+/* Two Column Section */
+.tos-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  /* margin-top: 12px; */
+}
+
+.tos-col-title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tos-col-list {
+  /* margin-top: 10px; */
+  margin-left: 16px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Note Box */
+.tos-note {
+  /* margin-top: 14px; */
+  padding: 14px;
+  border-radius: 12px;
+  background: #f3f8ff;
+  border: 1px solid rgba(60, 140, 255, 0.35);
+  color: #0b2b55;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Steps Box */
+.tos-steps {
+  /* margin-top: 10px; */
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  font-size: 13px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Footer Note */
+.tos-footer-note {
+  /* margin-top: 12px; */
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+}
+
+/* Danger Box */
+.tos-danger-box {
+  /* margin-top: 14px; */
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 60, 60, 0.07);
+  border: 1px solid rgba(255, 60, 60, 0.25);
+}
+
+.tos-danger-box h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 3500;
+  color: #ff3b3b;
+}
+
+/* Dark Note */
+.tos-dark-note {
+  /* margin-top: 10px; */
+  padding: 14px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Bottom Box */
+.tos-bottom {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.tos-bottom h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.tos-bottom p {
+  /* margin-top: 8px; */
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.tos-link {
+  color: rgba(140, 200, 255, 1);
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .tos-two-col {
+    grid-template-columns: 1fr;
+  }
+}

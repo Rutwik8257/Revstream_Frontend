@@ -1,0 +1,62 @@
+.form a {
+  color: rgb(155, 158, 163);
+  text-decoration: none;
+}
+.form aside {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.form aside:nth-child(2) {
+  text-align: end;
+}
+.form input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.form span {
+  font-size: 15px;
+  color: rgb(155, 158, 163);
+}
+.form p {
+  color: rgb(155, 158, 163);
+}
+.form aside input {
+  height: 60px;
+  width: 100%;
+  border-radius: 20px;
+  padding-left: 10px;
+  background-color: rgb(35, 42, 51);
+  border: none;
+  margin-bottom: 10px;
+  color: rgb(155, 158, 163);
+  font-size: 20px;
+}
+
+.form input::placeholder {
+  color: rgb(155, 158, 163);
+}
+
+.form {
+  width: 85%;
+  display: flex;
+  align-items: start;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.form aside:last-child {
+  text-align: center;
+  a {
+    color: rgb(220, 247, 99);
+  }
+}
+.form button {
+  width: 268px;
+  height: 50px;
+  margin-top: 10px;
+  background-color: rgb(220, 247, 99);
+  border-radius: 20px;
+  font-size: 18px;
+}

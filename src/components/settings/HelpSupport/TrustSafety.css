@@ -1,0 +1,511 @@
+.ts-page {
+  /* padding: 0px 34px; */
+  min-height: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.ts-header {
+  width: 100%;
+  margin: 0 0 10px 0;   
+}
+
+
+.ts-head-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.ts-back {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ts-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.ts-header p {
+  margin: 6px 0 0;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.45;
+}
+
+/*  SCROLL */
+.ts-scroll {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+
+  height: calc(100vh - 75px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* hide scrollbar */
+.ts-scroll::-webkit-scrollbar {
+  width: 0px;
+}
+.ts-scroll {
+  scrollbar-width: none;
+}
+
+/*  TOP STRIP */
+.ts-strip {
+  padding: 16px;
+  border-radius: 10px;
+
+  border: 1px solid rgba(0, 255, 210, 0.26);
+  background: rgba(0, 255, 210, 0.06);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.42);
+}
+
+.ts-strip-title {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.ts-strip-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+
+  display: grid;
+  place-items: center;
+
+  background: rgba(0, 255, 210, 0.10);
+  border: 1px solid rgba(0, 255, 210, 0.22);
+}
+
+.ts-strip h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(190, 255, 250, 0.95);
+}
+
+.ts-strip-desc {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(210, 255, 250, 0.85);
+  line-height: 1.55;
+}
+
+/*  CARDS */
+.ts-card {
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 10px;
+
+  background: rgba(15, 20, 30, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(12px);
+}
+
+.ts-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ts-card-title h3 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.ts-desc {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.66);
+  line-height: 1.5;
+}
+
+/* badges */
+.ts-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ts-badge.blue {
+  background: rgba(90, 180, 255, 0.10);
+  border-color: rgba(90, 180, 255, 0.25);
+}
+
+.ts-badge.amber {
+  background: rgba(255, 190, 80, 0.10);
+  border-color: rgba(255, 190, 80, 0.25);
+}
+
+.ts-badge.red {
+  background: rgba(255, 80, 80, 0.08);
+  border-color: rgba(255, 80, 80, 0.25);
+}
+
+.ts-badge.purple {
+  background: rgba(170, 90, 255, 0.10);
+  border-color: rgba(170, 90, 255, 0.25);
+}
+
+.ts-badge.indigo {
+  background: rgba(110, 110, 255, 0.10);
+  border-color: rgba(110, 110, 255, 0.25);
+}
+
+/*  Verification list */
+.ts-verify-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ts-verify-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+
+  padding: 12px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ts-num {
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+
+  display: grid;
+  place-items: center;
+
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.blue-num {
+  background: rgba(90, 180, 255, 0.15);
+  border: 1px solid rgba(90, 180, 255, 0.28);
+  color: rgba(220, 245, 255, 0.95);
+}
+
+.ts-verify-item h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ts-verify-item p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.5;
+}
+
+.ts-verify-item ul {
+  margin: 8px 0 0;
+  padding-left: 16px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.55;
+}
+
+/* timeline */
+.ts-timeline {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+
+  background: rgba(0, 255, 210, 0.06);
+  border: 1px solid rgba(0, 255, 210, 0.18);
+}
+
+.ts-timeline h4 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(160, 255, 250, 0.95);
+}
+
+.ts-timeline p {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(220, 255, 250, 0.85);
+  line-height: 1.5;
+}
+
+/*  Misuse grid */
+.ts-grid-2 {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ts-mini-card {
+  padding: 12px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ts-mini-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ts-mini-card ul {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.55;
+}
+
+/* proactive */
+.ts-proactive {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+
+  background: rgba(255, 190, 80, 0.12);
+  border: 1px solid rgba(255, 190, 80, 0.22);
+}
+
+.ts-proactive h4 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(255, 225, 175, 0.95);
+}
+
+.ts-proactive p {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(255, 240, 210, 0.9);
+  line-height: 1.5;
+}
+
+/*  Dark panels (suspension policy) */
+.ts-dark-panels {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ts-dark-panel {
+  padding: 12px;
+  border-radius: 10px;
+
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.ts-dark-panel h4 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ts-dark-panel p {
+  margin: 0 0 8px 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.5;
+}
+
+.ts-dark-panel ul {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.55;
+}
+
+.ts-dark-panel ol {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.55;
+}
+
+.ts-small {
+  margin-top: 10px !important;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.50);
+}
+
+/* titles */
+.red-title { color: rgba(255, 90, 90, 0.95); }
+.amber-title { color: rgba(255, 200, 120, 0.95); }
+.blue-title { color: rgba(120, 200, 255, 0.95); }
+.green-title { color: rgba(110, 255, 210, 0.95); }
+
+/* dispute list */
+.ts-dispute-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ts-dispute-item {
+  padding: 12px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ts-dispute-item h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ts-dispute-item p {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.5;
+}
+
+.ts-note {
+  margin-top: 8px !important;
+  color: rgba(180, 210, 255, 0.85) !important;
+  font-size: 10px !important;
+}
+
+/* escrow blue note */
+.ts-escrow {
+  padding: 12px;
+  border-radius: 10px;
+
+  background: rgba(90, 180, 255, 0.10);
+  border: 1px solid rgba(90, 180, 255, 0.22);
+}
+
+.ts-escrow h4 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(220, 245, 255, 0.95);
+}
+
+.ts-escrow p {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(230, 245, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* report grid */
+.ts-report-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.ts-report-card {
+  padding: 14px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.ts-report-card h4 {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ts-report-card p {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.45;
+}
+
+.ts-email {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.ts-email.green {
+  color: rgba(200, 255, 61, 0.95);
+}
+
+.ts-confidential {
+  margin-top: 14px;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.5;
+}
+
+/* summary footer */
+.ts-summary {
+  margin-top: 14px;
+  padding: 16px;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.ts-summary h4 {
+  margin: 0 0 6px 0;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.ts-summary p {
+  margin: 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.55;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  .ts-grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .ts-report-grid {
+    grid-template-columns: 1fr;
+  }
+}

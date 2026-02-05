@@ -1,0 +1,180 @@
+/* ============ FULL PAGE WRAPPER ============ */
+.task_details_wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+
+  height: 100vh; /* FULL SCREEN HEIGHT */
+  width: 100%;
+  padding: 30px;
+  box-sizing: border-box;
+
+  color: white;
+  overflow: hidden; /* prevents double scroll */
+}
+
+/* ============ LEFT MAIN CARD ============ */
+.task_card {
+  background: #0f1624;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* scroll only inside card */
+}
+
+.back {
+  color: #aaa;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.task_card h2 {
+  font-size: 24px;
+}
+
+.price {
+  color: #dcf763;
+}
+
+/* TAGS */
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+}
+
+.tags span {
+  background: #1c2333;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+/* TEXT */
+.task_card h3 {
+  margin-top: 25px;
+}
+
+.task_card p {
+  color: #cbd2e1;
+}
+
+.task_card ul {
+  padding-left: 20px;
+}
+
+.task_card li {
+  margin-bottom: 10px;
+  color: #cbd2e1;
+}
+
+/* BUTTONS */
+.action_row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto; /* pushes buttons to bottom */
+}
+
+.ghost {
+  background: transparent;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+}
+
+.primary {
+  background: #dcf763;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ============ RIGHT SIDE PANEL ============ */
+.side_panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: auto;
+}
+
+.info_card {
+  background: #0f1624;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.info_card h4 {
+  margin-bottom: 10px;
+}
+
+.note p {
+  color: #dcf763;
+}
+
+/* TEXTAREA */
+textarea {
+  width: 100%;
+  height: 100px;
+  background: #1c2333;
+  border: none;
+  border-radius: 12px;
+  padding: 10px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.full {
+  width: 100%;
+}
+
+/* ============ MODALS ============ */
+.modal_overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 20, 0.8);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal_card {
+  background: linear-gradient(180deg, #141c2b, #0e1422);
+  width: 520px;
+  padding: 30px;
+  border-radius: 20px;
+  color: white;
+  position: relative;
+}
+
+.close_btn {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: #1c2333;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 900px) {
+  .task_details_wrapper {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .action_row {
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,88 @@
+/* ROOT */
+.settings-root {
+  max-width: 900px;
+  padding: 32px;
+  color: #ffffff;
+  font-family: Inter, sans-serif;
+}
+
+/* HEADER */
+.settings-header h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.settings-header p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #9fb0c8;
+  max-width: 520px;
+}
+
+/* GRID */
+.settings-grid {
+  margin-top: 28px;
+  display: grid;
+  gap: 16px;
+}
+
+/* TILE */
+.settings-tile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #071426, #050b14);
+  border: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.settings-tile:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(180deg, #0b1b33, #071426);
+}
+
+/* LEFT */
+.settings-tile-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ICON */
+.settings-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: rgba(96,165,250,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60a5fa;
+  font-size: 20px;
+}
+
+/* TEXT */
+.settings-text h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.settings-text span {
+  font-size: 13px;
+  color: #9fb0c8;
+}
+
+/* ARROW */
+.settings-arrow {
+  font-size: 18px;
+  color: #9fb0c8;
+  transition: transform 0.2s ease;
+}
+
+.settings-tile:hover .settings-arrow {
+  transform: translateX(4px);
+  color: #ffffff;
+}

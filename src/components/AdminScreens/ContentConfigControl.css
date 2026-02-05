@@ -1,0 +1,444 @@
+.ccc-container {
+  flex: 1;
+  padding: 28px 32px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  height: 100vh ;
+}
+
+/* HEADER */
+.ccc-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ccc-header p {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* GRID */
+.ccc-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* LAUNCH BOX */
+.launch-box {
+  background: rgba(214, 255, 61, 0.15);
+  padding: 16px;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  color: #d6ff3d;
+}
+
+/* TASKS */
+.ccc-root .task-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.task-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pilot-only {
+  color: #d6ff3d;
+  font-size: 11px;
+}
+
+/* SWITCH */
+.switch {
+  position: relative;
+  width: 40px;
+  height: 20px;
+}
+.switch input {
+  display: none;
+}
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #555;
+  border-radius: 20px;
+}
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: 0.3s;
+}
+input:checked + .slider {
+  background: #d6ff3d;
+}
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+/* LIMITS */
+.limit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 12px;
+}
+.limit-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+/* BANNERS */
+.banner-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+.banner-header {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* RIGHT */
+.ccc-right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.note-box {
+  background: rgba(214, 255, 61, 0.15);
+  padding: 16px;
+  border-radius: 16px;
+  color: #d6ff3d;
+}
+
+/* BUTTONS */
+.primary-btn {
+  background: #d6ff3d;
+  border: none;
+  padding: 14px;
+  border-radius: 28px;
+  font-weight: 600;
+}
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  padding: 14px;
+  border-radius: 28px;
+  color: white;
+}
+
+/* PILLS */
+.pill {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 10px;
+}
+.pill.active {
+  background: rgba(214, 255, 61, 0.25);
+  color: #d6ff3d;
+}
+.pill.inactive {
+  background: rgba(241, 196, 15, 0.25);
+  color: #f1c40f;
+}
+
+/* ================= ANNOUNCEMENT HEADER ================= */
+.announcement-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.announcement-header h3 {
+  margin-bottom: 4px;
+}
+
+.announcement-header p {
+  font-size: 12px;
+  color: #9aa4b2;
+}
+
+/* ================= ADVANCED BANNER CARD ================= */
+.advanced-banner-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 18px;
+  margin-top: 14px;
+}
+
+.banner-top-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.banner-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ================= BADGES ================= */
+.badge-group {
+  display: flex;
+  gap: 6px;
+}
+
+.pill.announcement {
+  background: rgba(155, 89, 182, 0.25);
+  color: #c084fc;
+}
+
+.pill.warning {
+  background: rgba(230, 126, 34, 0.25);
+  color: #f39c12;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.banner-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.activate-btn {
+  background: #d6ff3d;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.deactivate-btn {
+  background: rgba(255, 255, 255, 0.18);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-btn.delete {
+  background: rgba(231, 76, 60, 0.8);
+}
+
+/* ================= BANNER TEXT ================= */
+.advanced-banner-card p {
+  font-size: 13px;
+  color: #cfd8dc;
+  margin-bottom: 6px;
+}
+
+.advanced-banner-card small {
+  font-size: 11px;
+  color: #9aa4b2;
+}
+
+/* ================= CURRENT CONFIG ================= */
+.current-config {
+  background: rgba(214, 255, 61, 0.12);
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 18px;
+}
+
+.current-config strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #d6ff3d;
+}
+
+.config-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.config-grid span {
+  font-size: 11px;
+  color: #9aa4b2;
+}
+
+.config-grid b {
+  font-size: 13px;
+  color: #fff;
+}
+
+/* ================= TASK LIMITS & CONFIGURATION ================= */
+
+.task-limit-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 18px 0 26px;
+}
+
+.task-limit-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.limit-header {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.limit-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: rgba(214, 255, 61, 0.15);
+  color: #d6ff3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.limit-sub {
+  font-size: 12px;
+  color: #9aa4b2;
+  margin-top: 2px;
+}
+
+.limit-label {
+  font-size: 12px;
+  color: #9aa4b2;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.limit-input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.limit-note {
+  font-size: 12px;
+  color: #9aa4b2;
+}
+
+/* ================= CREATE BANNER MODAL ================= */
+.create-banner-modal {
+  width: 480px;
+  background: linear-gradient(180deg, #1a1a1a, #111);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+}
+
+.create-banner-modal h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.modal-subtitle {
+  font-size: 13px;
+  color: #9aa4b2;
+  margin-bottom: 18px;
+}
+
+.create-banner-modal label {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 6px;
+  color: #9aa4b2;
+}
+
+.create-banner-modal input,
+.create-banner-modal textarea,
+.create-banner-modal select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  color: #fff;
+  margin-bottom: 14px;
+}
+
+.create-banner-modal textarea {
+  resize: none;
+  height: 80px;
+}
+
+.info-box {
+  background: rgba(214, 255, 61, 0.15);
+  border-left: 4px solid #d6ff3d;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 12px;
+  color: #d6ff3d;
+  margin: 16px 0;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}

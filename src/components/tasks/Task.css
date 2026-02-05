@@ -1,0 +1,76 @@
+.taskCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 18px;
+  /* margin-top: 20px; */
+}
+
+.task-card {
+  padding: 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: 0.3s;
+}
+
+.task-card:hover {
+  transform: translateY(-6px);
+}
+
+.task-top {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.task-card h3 {
+  margin-top: 12px;
+}
+
+.price {
+  color: #d6ff3d;
+}
+
+.skills {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.skills span {
+  background: #1e293b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.task-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.high {
+  color: #ff6b6b;
+}
+
+.action-btn {
+  background: #0f172a;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 20px;
+}
+
+.action-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.no-data {
+  margin-top: 40px;
+  padding: 40px;
+  text-align: center;
+  color: #9aa4b2;
+}

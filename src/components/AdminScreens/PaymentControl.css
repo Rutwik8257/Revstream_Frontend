@@ -1,0 +1,150 @@
+/* MAIN */
+.payment-main {
+  flex: 1;
+  padding: 30px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* HEADER */
+.payment-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #9aa4b2;
+}
+
+/* PROFILE */
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LAYOUT GRID */
+.payment-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+
+/* PAYMENT LIST */
+.payment-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 16px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-card p {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.payment-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* STATUS */
+.status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.pending {
+  background: #ffd60a33;
+  color: #ffd60a;
+}
+.approved {
+  background: #4cd96433;
+  color: #4cd964;
+}
+.disputed {
+  background: #ff4d4d33;
+  color: #ff4d4d;
+}
+.released {
+  background: #4cd96433;
+  color: #4cd964;
+}
+.held {
+  background: #ff9f0a33;
+  color: #ff9f0a;
+}
+
+/* BUTTONS */
+.payment-main button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.approve {
+  background: #d6ff3d;
+}
+.hold {
+  background: #3a1f1f;
+  color: #ff4d4d;
+}
+.release {
+  background: #2ecc71;
+  color: #000;
+}
+.review {
+  background: #444;
+  color: #fff;
+}
+
+/* OVERVIEW */
+.overview {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.overview-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 18px;
+}
+
+.overview-card span {
+  font-size: 12px;
+  color: #9aa4b2;
+}
+
+.note {
+  background: rgba(214, 255, 61, 0.12);
+  padding: 14px;
+  border-radius: 14px;
+  font-size: 12px;
+  color: #d6ff3d;
+}
+
+.export-btn {
+  background: #d6ff3d;
+  padding: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 20px;
+  color: #fff;
+}

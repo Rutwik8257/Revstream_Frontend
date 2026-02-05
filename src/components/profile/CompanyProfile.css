@@ -1,0 +1,174 @@
+.cpRoot {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.cpMain {
+  flex: 1;
+  padding: 28px 32px;
+  overflow-y: auto;
+}
+
+/* HEADER */
+.cpHeader {
+  margin-bottom: 16px;
+}
+
+.cpTitle {
+  margin: 0;
+}
+
+.cpSubtitle {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+/* COMPANY CARD */
+.cpCompanyCard {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 24px;
+  margin-top: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cpCompanyName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cpVerifiedBadge {
+  background: rgba(46, 204, 113, 0.2);
+  color: #2ecc71;
+  padding: 4px 10px;
+  font-size: 11px;
+  border-radius: 12px;
+}
+
+.cpCompanyDesc {
+  margin-top: 10px;
+  color: #b4bcc8;
+  font-size: 14px;
+}
+
+.cpCompanyMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 18px;
+  font-size: 13px;
+}
+
+/* STATS */
+.cpStatsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.cpStatBox {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.cpStatBox p {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.cpPositive {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  color: #2ecc71;
+}
+
+/* QUICK ACTION — CENTERED */
+.cpQuickActions {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 20px;
+  margin-top: 24px;
+}
+
+.cpActionCenter {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+/* EDIT BUTTON — BEAUTIFUL */
+.cpEditBtn {
+  width: 260px;
+  padding: 14px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(135deg, #00d4c6, #00b3a8);
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 212, 198, 0.25);
+  transition: all 0.2s ease;
+}
+
+.cpEditBtn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(0, 212, 198, 0.35);
+}
+
+/* BOTTOM RIGHT LOGOUT BUTTON */
+.cpBottomLogout {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  background: linear-gradient(135deg, #d6ff3d, #b6e200);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(214, 255, 61, 0.25);
+}
+
+/* MODAL */
+.cpModalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.cpLogoutModal {
+  background: linear-gradient(180deg, #0f2436, #0b1a28);
+  padding: 32px;
+  border-radius: 20px;
+  width: 480px;
+  text-align: center;
+}
+
+.cpLogoutActions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.cpCancelBtn {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+}
+
+.cpConfirmBtn {
+  padding: 10px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #d6ff3d;
+}

@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+html,
+body,
+#root,
+.history-root {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a2332, #05070c);
+  color: #fff;
+}
+
+/* LAYOUT */
+.history-root {
+  display: flex;
+}
+
+/* EMPTY SIDEBAR */
+.sidebar-spacer {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle {
+  color: #9aa4b2;
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+/* PROFILE ICON */
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SUMMARY */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.summary-card {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  cursor: pointer;
+}
+
+.summary-card p {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.summary-card h3 {
+  margin-top: 6px;
+}
+
+.summary-card.active {
+  outline: 2px solid #d6ff3d;
+}
+
+.blue h3 {
+  color: #4fc3f7;
+}
+
+.green h3 {
+  color: #4cd964;
+}
+
+.yellow h3 {
+  color: #ffcc00;
+}
+
+/* WITHDRAWAL LIST */
+.withdrawal-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 20px;
+}
+
+.withdrawal-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.withdrawal-row:last-child {
+  border-bottom: none;
+}
+
+.withdrawal-row p {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.arrival.blue {
+  color: #4fc3f7;
+}
+
+.arrival.green {
+  color: #4cd964;
+}
+
+.arrival.yellow {
+  color: #ffcc00;
+}
+
+/* STATUS PILL */
+.status-pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  height: fit-content;
+}
+
+.processing {
+  background: rgba(79, 195, 247, 0.15);
+  color: #4fc3f7;
+}
+
+.released {
+  background: rgba(76, 217, 100, 0.15);
+  color: #4cd964;
+}
+
+.pending {
+  background: rgba(255, 204, 0, 0.15);
+  color: #ffcc00;
+}

@@ -1,0 +1,179 @@
+/* MAIN */
+.admin-main {
+  flex: 1;
+  padding: 30px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* HEADER */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #9aa4b2;
+}
+
+/* PROFILE */
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-card span {
+  font-weight: 600;
+}
+
+.stat-card.warning span {
+  color: #ffd60a;
+}
+.stat-card.success span {
+  color: #4cd964;
+}
+
+/* SECTION */
+.section-title {
+  margin-bottom: 14px;
+}
+
+/* TASK LIST */
+.task-list {
+  height: 75%;
+  width: 100%;
+  /* border: solid red; */
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.task-card {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.admin-root .task-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-info h4 {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.task-info p {
+  font-size: 13px;
+  color: #9aa4b2;
+  margin-top: 6px;
+}
+
+/* BADGES */
+.badge {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  text-transform: capitalize;
+}
+
+.in-progress {
+  background: #2d7cff33;
+  color: #2d7cff;
+}
+.stuck {
+  background: #ff9f0a33;
+  color: #ff9f0a;
+}
+.open {
+  background: #00d1ff33;
+  color: #00d1ff;
+}
+.completed {
+  background: #4cd96433;
+  color: #4cd964;
+}
+
+.high {
+  background: #ff4d4d33;
+  color: #ff4d4d;
+}
+.medium {
+  background: #ffd60a33;
+  color: #ffd60a;
+}
+.urgent {
+  background: #ff375f33;
+  color: #ff375f;
+}
+.low {
+  background: #4cd96433;
+  color: #4cd964;
+}
+
+/* ACTIONS */
+.task-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.task-actions select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.force-btn {
+  background: #d6ff3d;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* FOOTER */
+.admin-footer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-btn {
+  width: 100%;
+  background: #d6ff3d;
+  border: none;
+  padding: 14px;
+  border-radius: 26px;
+  font-weight: 600;
+  cursor: pointer;
+}

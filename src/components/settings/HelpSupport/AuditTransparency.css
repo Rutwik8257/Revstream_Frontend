@@ -1,0 +1,482 @@
+.at-page {
+  padding: 22px;
+  min-height: 100%;
+  color: #fff;
+  /* background: radial-gradient(circle at 25% 10%, #0d2b4f 0%, #060a12 55%, #05070c 100%); */
+}
+
+/* HEADER */
+.at-header {
+  margin-bottom: 10px;
+}
+
+.at-head-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.at-back {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.at-header h2 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.at-header p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.4;
+}
+
+/*  SCROLL */
+.at-scroll {
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 6px;
+}
+
+.at-scroll::-webkit-scrollbar {
+  width: 0px;
+}
+.at-scroll {
+  scrollbar-width: none;
+}
+
+/* STRIP */
+.at-strip {
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 210, 80, 0.26);
+  background: rgba(255, 210, 80, 0.07);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+.at-strip-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.at-strip-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 210, 80, 0.12);
+  border: 1px solid rgba(255, 210, 80, 0.24);
+}
+
+.at-strip h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.at-strip-desc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: rgba(255, 245, 210, 0.9);
+}
+
+/* CARD */
+.at-card {
+  margin-top: 13px;
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(10, 14, 22, 0.55);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+}
+
+.at-card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.at-card-title h3 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.at-desc {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+/* BADGES */
+.at-badge {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.at-badge.blue {
+  background: rgba(90, 180, 255, 0.1);
+  border-color: rgba(90, 180, 255, 0.25);
+}
+
+.at-badge.purple {
+  background: rgba(170, 90, 255, 0.1);
+  border-color: rgba(170, 90, 255, 0.25);
+}
+
+.at-badge.green {
+  background: rgba(35, 255, 160, 0.08);
+  border-color: rgba(35, 255, 160, 0.24);
+}
+
+.at-badge.money {
+  background: rgba(170, 90, 255, 0.1);
+  border-color: rgba(170, 90, 255, 0.25);
+}
+
+.at-badge.red {
+  background: rgba(255, 80, 80, 0.08);
+  border-color: rgba(255, 80, 80, 0.25);
+}
+
+.at-badge.teal {
+  background: rgba(120, 255, 250, 0.1);
+  border-color: rgba(120, 255, 250, 0.25);
+}
+
+/* Task logs list */
+.at-log-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.at-log-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.at-log-left {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.at-log-bar {
+  width: 3px;
+  border-radius: 10px;
+  background: rgba(110, 200, 255, 0.9);
+  margin-top: 3px;
+}
+
+.at-log-text h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.at-log-text p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.45;
+}
+
+.at-tag {
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  background: rgba(200, 255, 61, 0.1);
+  border: 1px solid rgba(200, 255, 61, 0.25);
+  color: rgba(225, 255, 180, 0.95);
+}
+
+/* note */
+.at-note {
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+/* Access logs grid */
+.at-grid-2 {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.at-mini-card {
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.at-mini-card h4 {
+  margin: 0 0 8px 0;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.at-mini-card ul {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.55;
+}
+
+/* anomaly */
+.at-anomaly {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(170, 90, 255, 0.1);
+  border: 1px solid rgba(170, 90, 255, 0.22);
+}
+
+.at-anomaly h4 {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(230, 220, 255, 0.95);
+}
+
+.at-anomaly p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(230, 220, 255, 0.8);
+  line-height: 1.5;
+}
+
+/* Permission bullet list */
+.at-bullet-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.at-bullet {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.at-bullet-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.green-dot {
+  background: #21ff9f;
+  box-shadow: 0 0 10px rgba(33, 255, 159, 0.3);
+}
+
+.at-bullet h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.at-bullet p {
+  margin: 5px 0 0;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.5;
+}
+
+/* soft note */
+.at-soft-note {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(90, 180, 255, 0.1);
+  border: 1px solid rgba(90, 180, 255, 0.22);
+  font-size: 13px;
+  color: rgba(230, 245, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* payment list */
+.at-pay-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.at-pay-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.at-pay-bar {
+  width: 4px;
+  border-radius: 10px;
+  margin-top: 4px;
+  height: 44px;
+}
+
+.violet {
+  background: rgba(170, 90, 255, 0.9);
+}
+
+.at-pay-item h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.at-pay-item p {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.5;
+}
+
+/* finance info */
+.at-info {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(90, 180, 255, 0.1);
+  border: 1px solid rgba(90, 180, 255, 0.22);
+  font-size: 13px;
+  color: rgba(230, 245, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* log security items */
+.at-sec-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.at-sec-item {
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 80, 80, 0.06);
+  border: 1px solid rgba(255, 80, 80, 0.2);
+}
+
+.at-sec-item h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255, 190, 190, 0.95);
+}
+
+.at-sec-item p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: rgba(255, 220, 220, 0.85);
+  line-height: 1.5;
+}
+
+/* report list */
+.at-report-list {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.at-report-item {
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.at-report-item h4 {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.at-report-item p {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.5;
+}
+
+/* request */
+.at-request {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(90, 180, 255, 0.1);
+  border: 1px solid rgba(90, 180, 255, 0.22);
+  font-size: 13px;
+  color: rgba(230, 245, 255, 0.85);
+  line-height: 1.5;
+}
+
+/* summary */
+.at-summary {
+  margin-top: 13px;
+  padding: 13px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.at-summary h4 {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.at-summary p {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.55;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .at-grid-2 {
+    grid-template-columns: 1fr;
+  }
+}

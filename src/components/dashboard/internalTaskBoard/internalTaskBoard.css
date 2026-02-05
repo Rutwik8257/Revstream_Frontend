@@ -1,0 +1,43 @@
+/* MAIN */
+.board-root .main {
+  flex: 1;
+  padding: 30px;
+}
+
+.subtitle {
+  color: #9aa4b2;
+  margin-bottom: 20px;
+}
+
+.board-root .search {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* TABS */
+.board-root .tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.board-root .tab {
+  background: transparent;
+  border: none;
+  color: #cfd8dc;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.board-root .tab.active {
+  background: #d6ff3d;
+  color: #000;
+}
+
+/* TASK CARD */

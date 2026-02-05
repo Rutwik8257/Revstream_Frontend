@@ -1,0 +1,240 @@
+/* ============================= */
+/* ===== Company / Header ===== */
+/* ============================= */
+.main_container {
+  display: flex;
+  flex-direction: column;
+  height: 96vh;
+}
+
+.company {
+  color: white;
+  /* height: 30%; */
+  flex-basis: 30%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.company h2 {
+  margin-bottom: 5px;
+}
+
+.company small {
+  color: #aab0c0;
+}
+
+/* KPI Header */
+.company > div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company > div:nth-child(2) a {
+  background-color: rgb(220, 247, 99);
+  text-decoration: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: black;
+}
+
+/* KPI Cards */
+.company > div:nth-child(3) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-items: center;
+  gap: 15px;
+}
+
+.company > div:nth-child(3) div {
+  height: 70px;
+  border: 0.5px solid rgb(91, 101, 120);
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  background: #141a29;
+}
+
+.company > div:nth-child(3) p:first-child {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.company > div:nth-child(3) p:last-child {
+  font-size: 12px;
+  color: #aab0c0;
+}
+
+/* ============================= */
+/* ===== Task Section ===== */
+/* ============================= */
+
+.task {
+  flex-basis: 70%;
+  color: white;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 4fr 1.4fr;
+  gap: 20px;
+}
+
+/* Task Header */
+.task_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.task_header span {
+  font-weight: 600;
+}
+
+.task_header a {
+  font-size: 12px;
+  color: #aab0c0;
+  text-decoration: none;
+}
+
+/* Task List Container */
+.display_task {
+  /* gap: 15px; */
+  border: 0.5px solid rgb(91, 101, 120);
+  height: 100%;
+  border-radius: 20px;
+  height: 400px;
+  padding: 10px;
+  article {
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+  }
+}
+/* .display_task::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+} */
+/* ============================= */
+/* ===== Quick Actions ===== */
+/* ============================= */
+
+.quick_actions {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quick_actions p {
+  background: #1c2333;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.3s ease;
+}
+
+.quick_actions p:hover {
+  background: #242c3f;
+}
+
+/* ============================= */
+/* ===== Escrow Section ===== */
+/* ============================= */
+
+.escrow {
+  margin-top: 12px;
+  padding: 16px;
+  background: #141a29;
+  border-radius: 16px;
+  border: 1px solid #2a3142;
+}
+
+.escrow_item {
+  margin-bottom: 18px;
+}
+
+.escrow_item:last-child {
+  margin-bottom: 0;
+}
+
+.escrow_label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #c9d1e4;
+}
+
+/* Progress Bar Track */
+.progress {
+  height: 7px;
+  background: #1f2636;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+/* Progress Bar Fill */
+.progress_bar {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease-in-out;
+}
+
+/* Progress Colors */
+.blue {
+  background: linear-gradient(90deg, #4da3ff, #7bbcff);
+}
+
+.orange {
+  background: linear-gradient(90deg, #ffb547, #ffd27d);
+}
+
+.green {
+  background: linear-gradient(90deg, #4cd964, #7df5a5);
+}
+.imageRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30px; /* move both images down a bit */
+  gap: 50px;
+}
+
+/* IMAGE 1 (no box, just image) */
+.imgOne {
+  width: 320px;
+  max-width: 100%;
+  padding-top: 50px;
+  height: 340px;
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideSide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

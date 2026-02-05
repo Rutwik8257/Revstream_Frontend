@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle at top, #1a2332, #05070c);
+  color: #fff;
+}
+
+.ecp-root {
+  display: flex;
+  height: 100vh;
+}
+
+/* MAIN */
+.ecp-container {
+  flex: 1;
+  padding: 28px 32px;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+/* HEADER */
+.ecp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.back-link {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.ecp-header h1 {
+  margin-top: 6px;
+}
+
+.ecp-header p {
+  font-size: 13px;
+  color: #9aa4b2;
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CARD */
+.ecp-card {
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 24px;
+  border-radius: 18px;
+}
+
+/* LOGO */
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.logo-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  background: #3a4a6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.change-logo-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+/* FORM */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  font-size: 12px;
+  color: #9aa4b2;
+  margin-bottom: 6px;
+}
+
+.form-group input,
+textarea {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 12px;
+  color: #fff;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* ABOUT */
+.about-card {
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 24px;
+  border-radius: 18px;
+}
+
+.about-card label {
+  font-size: 13px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.about-card textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* ACTIONS */
+.form-actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 16px;
+}
+
+.primary-btn {
+  background: #d6ff3d;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 26px;
+  font-weight: 600;
+}
+
+.secondary-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 26px;
+  color: #fff;
+}
+
+/* PROFILE UPDATED POPUP */
+.profile-success-toast {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(30, 40, 60, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 14px 22px;
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
+  z-index: 9999;
+  min-width: 360px;
+}
+
+.profile-success-toast strong {
+  font-size: 16px;
+  display: block;
+}
+
+.profile-success-toast p {
+  font-size: 13px;
+  color: #9aa4b2;
+  margin-top: 4px;
+}

@@ -1,0 +1,148 @@
+/* MAIN */
+.help-main {
+  flex: 1;
+  padding: 30px;
+  overflow-y: scroll;
+  height: 100vh;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+}
+
+/* HEADER */
+.help-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subtitle {
+  color: #9aa4b2;
+  margin-top: 6px;
+}
+
+/* PROFILE */
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* QUICK ACTIONS */
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 25px 0;
+}
+
+.qa-card {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  text-align: center;
+}
+
+/* TICKETS */
+.section-title {
+  margin: 25px 0 12px;
+}
+
+.ticket-table {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 14px;
+}
+
+.ticket-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.status.open {
+  color: #ffcc00;
+}
+
+.status.inprogress {
+  color: #4aa3ff;
+}
+
+.status.resolved {
+  color: #4cd964;
+}
+
+/* FAQ */
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.faq-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.faq-image {
+  max-width: 260px;
+  height: 160px;
+  align-self: center;
+}
+
+.faq-help-card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 18px;
+  border-radius: 14px;
+}
+
+.faq-help-card p {
+  font-size: 13px;
+  color: #9aa4b2;
+  margin: 10px 0;
+}
+
+.faq-btn {
+  background: #d6ff3d;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* FAQ RIGHT */
+.faq-right {
+  max-height: 320px;
+  overflow-y: auto;
+  padding-right: 6px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.faq-item p {
+  font-size: 13px;
+  color: #9aa4b2;
+  margin-top: 6px;
+}
+
+/* CONTACT */
+.contact-box {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.06);
+  padding: 18px;
+  border-radius: 14px;
+}

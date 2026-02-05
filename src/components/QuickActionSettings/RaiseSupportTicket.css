@@ -1,0 +1,127 @@
+/* MAIN */
+.ticket-main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.ticket-card {
+  width: 720px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(22px);
+  border-radius: 20px;
+  padding: 30px 32px 36px;
+}
+
+/* HEADER */
+.ticket-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ticket-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.back {
+  font-size: 22px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.subtitle {
+  margin: 10px 0 26px;
+  font-size: 14px;
+  color: #9aa4b2;
+}
+
+/* FORM GRID */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+
+/* FIELD */
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #cfd8dc;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  outline: none;
+  font-size: 14px;
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* SUBMIT */
+.submit-wrap {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.submit-btn {
+  background: #d6ff3d;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ================= ERROR TOAST ================= */
+.error-toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #a61b1b;
+  color: #fff;
+  padding: 14px 18px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 320px;
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.error-toast strong {
+  font-size: 14px;
+}
+
+.error-toast p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.error-toast .close {
+  cursor: pointer;
+  font-size: 16px;
+  opacity: 0.9;
+}

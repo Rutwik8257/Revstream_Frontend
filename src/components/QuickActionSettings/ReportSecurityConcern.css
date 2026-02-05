@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+html,
+body,
+#root,
+.security-root {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1a2332, #05070c);
+  color: #fff;
+}
+
+/* LAYOUT */
+.security-root {
+  display: flex;
+}
+
+.sidebar-spacer {
+  width: 260px;
+  flex-shrink: 0;
+}
+
+/* MAIN */
+.security-main {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.security-card {
+  width: 760px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(22px);
+  border-radius: 20px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.security-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.security-header h2 {
+  font-size: 22px;
+}
+
+.back {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* SCROLLABLE CONTENT */
+.security-scroll {
+  max-height: 520px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+/* FIELDS */
+.field {
+  margin-bottom: 18px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  color: #cfd8dc;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  outline: none;
+}
+
+.field textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* ROW */
+.row {
+  display: flex;
+  gap: 14px;
+}
+
+/* SEVERITY */
+.severity {
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.severity.active {
+  border: 2px solid #d6ff3d;
+}
+
+/* CHECKBOX GRID */
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.check {
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+}
+
+/* NOTE */
+.note {
+  font-size: 12px;
+  color: #9aa4b2;
+  margin-top: 6px;
+}
+
+/* ACTIONS */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 18px;
+}
+
+.submit-btn {
+  background: #d6ff3d;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 22px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cancel-btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  padding: 12px 22px;
+  border-radius: 22px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+/* ================= SUCCESS MODAL ================= */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.success-modal {
+  width: 420px;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 38, 58, 0.98),
+    rgba(10, 22, 34, 0.98)
+  );
+  border-radius: 16px;
+  padding: 30px 26px;
+  text-align: center;
+  position: relative;
+}
+
+.success-icon {
+  font-size: 36px;
+  color: #d6ff3d;
+  margin-bottom: 14px;
+}
+
+.success-text {
+  font-size: 13px;
+  color: #9aa4b2;
+  margin-top: 6px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  cursor: pointer;
+  font-size: 18px;
+  opacity: 0.8;
+}

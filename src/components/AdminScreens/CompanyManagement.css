@@ -1,0 +1,139 @@
+/* MAIN */
+.company-main {
+  flex: 1;
+  padding: 30px;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+
+/* HEADER */
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  color: #9aa4b2;
+}
+
+/* PROFILE */
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* STATS */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 22px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-card span {
+  font-weight: 600;
+}
+
+.stat-card.green span {
+  color: #4cd964;
+}
+.stat-card.yellow span {
+  color: #ffd60a;
+}
+.stat-card.red span {
+  color: #ff4d4d;
+}
+
+/* LIST */
+.company-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.company-card {
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 18px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-info p {
+  font-size: 13px;
+  color: #9aa4b2;
+  margin-top: 4px;
+}
+
+.status-badge {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.status-badge.pending {
+  background: #ffd60a33;
+  color: #ffd60a;
+}
+.status-badge.active {
+  background: #4cd96433;
+  color: #4cd964;
+}
+.status-badge.blocked {
+  background: #ff4d4d33;
+  color: #ff4d4d;
+}
+
+.risk.low {
+  color: #4cd964;
+}
+.risk.high {
+  color: #ff4d4d;
+}
+
+/* ACTIONS */
+.company-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn.green {
+  background: #4cd964;
+  color: #000;
+}
+.btn.red {
+  background: #ff4d4d;
+  color: #fff;
+}
+.btn.orange {
+  background: #ff9f0a;
+  color: #000;
+}
+.btn.gray {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+}
