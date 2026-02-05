@@ -1,7 +1,7 @@
 import axios from "axios";
 
-let baseUrl = "http://revstreamapp-env.eba-xjftty88.eu-north-1.elasticbeanstalk.com";
-;
+// let baseUrl = "http://revstreamapp-env.eba-xjftty88.eu-north-1.elasticbeanstalk.com";
+let baseUrl = "https://www.revgoogle.com";
 let token = localStorage.getItem("token");
 
 // ===== AUTH / COMMON =====
