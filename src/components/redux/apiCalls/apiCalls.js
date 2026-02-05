@@ -1,9 +1,7 @@
 import axios from "axios";
 
-// Automatically detect environment and set appropriate base URL
-let baseUrl = process.env.NODE_ENV === 'production' 
-  ? "http://revstreamapp-env.eba-xjftty88.eu-north-1.elasticbeanstalk.com"
-  : "http://localhost:8080";
+let baseUrl = "http://revstreamapp-env.eba-xjftty88.eu-north-1.elasticbeanstalk.com";
+;
 let token = localStorage.getItem("token");
 
 // ===== AUTH / COMMON =====
